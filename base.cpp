@@ -1,7 +1,17 @@
 #include <iostream>
 
-int main() {
-    std::cout << "hello" << std::endl;
-    return 0;
-}
 
+using namespace std;
+
+
+class Database {
+    public:
+    private:
+    string Student_name = "Igor";
+};
+
+
+void main(){
+
+    cout << "igor'" << endl;
+};
