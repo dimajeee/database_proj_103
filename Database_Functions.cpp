@@ -1,7 +1,12 @@
 #include <iostream>
+#include "base.h"
+#include <fstream>
 
-int main() {
-    std::cout << "hello" << std::endl;
-    return 0; //на русском
-
+void Database::SetColumn(string Name_, int size_){
+    ofstream fout;
+    fout.open("atabase.txt");
+    fout << Name_ << "\n";
+    for (int i = 0; i != size_; i++) fout << '0' << "\n";
+    fout.close();
+}
 
